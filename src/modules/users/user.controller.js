@@ -10,7 +10,6 @@ export const getUsers = async (req, res) => {
   return ApiResponse(res, 200, users, "لیست کاربران برگشت داده شد");
 };
 
-// گرفتن کاربر خاص بر اساس id
 export const getUserById = async (req, res) => {
   const userId = parseInt(req.params.id);
   const users = [
